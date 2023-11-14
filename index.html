@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+
+<!-- header -->
+<body style="color: white; background-color: #263c2e">
+    <div class="container mt-5">
+        <h1 class="top-holders"><strong>THE CARTESIAN PRODUCT GENERATOR</strong></h1>
+    </div>
+
+
+<!-- OPTIONS -->
+    <div class="container mt-4 pt-2">
+        <button onclick="">Ready sets</button>
+        <button onclick="loadRandExSets()">Random sets</button>
+
+<!-- VALUE EDIT -->
+        <div class="bottom_rest">
+            <h4>Define your sets</h4>
+            <div class="digit_input">
+                <div class="in">
+                    <input class="form-control" type="text" id="input1" />
+                    <button onclick="addA()">Add</button>
+                    <button onclick="randInp('input1')">Random</button>
+                </div>
+                <div class="in">
+                    
+                    <input class="form-control" type="text" id="input2" />
+                    <button onclick="addB()">Add</button>
+                    <button onclick="randInp('input2')">Random</button>
+                </div>
+            </div>
+
+
+
+<!-- SETS -->
+            <div class="digit_input">
+                <div class="in">
+                    <label>Source:</label>
+                    <select id="set-a" size="5"></select>
+                    <div>
+                        <button onclick="remove('set-a')">Remove</button>
+                        <button onclick="clearSet('a')">Clear</button>
+                    </div>
+                </div>
+                <div class="in">
+                    <label>Target:</label>
+                    <select id="set-b" size="5"></select>
+                    <div>
+                        <button onclick="remove('set-b')">Remove</button>
+                        <button onclick="clearSet('b')">Clear</button>
+                    </div>
+                </div>
+            </div>
+
+<!-- CARTESIAN PRODUCT -->
+            <div>
+                <button style="width: 70%;" onclick="getValue()">Generate</button>
+                <button style="width: 70%;" onclick="greaterThan()">Greater than</button>
+            </div>
+            <DIV id="result">
+                <p>Your result will appear here.</p>
+            </DIV>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+<div>
+    <h1>notes</h1>
+    <p>greater if relation</p>
+    <p>squares relation</p>
+    
+
+</div>
+</html>
