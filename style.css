@@ -1,7 +1,8 @@
 div {
-    border: 2px solid rgb(66, 12, 12);
+    border: 2px solid rgba(44, 66, 12, 0.648);
     margin: 9px;
     padding: 3px;
+    background-color: rgba(25, 30, 23, 0.427);
 }
 
 .digit_input {
@@ -37,4 +38,14 @@ input {
 
 button {
     margin-left: 10px;
+}
+
+.value_inputs {
+    display: flex;
+    padding: 3%;
+
+}
+
+.sets {
+    display: flex;
 }

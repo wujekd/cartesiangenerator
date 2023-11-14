@@ -22,15 +22,15 @@
         <button onclick="loadRandExSets()">Random sets</button>
 
 <!-- VALUE EDIT -->
-        <div class="bottom_rest">
+        <div class="bottom_rest p-3 m-3">
             <h4>Define your sets</h4>
-            <div class="digit_input">
-                <div class="in">
+            <div class="sets">
+                <div class="value_inputs">
                     <input class="form-control" type="text" id="input1" />
                     <button onclick="addA()">Add</button>
                     <button onclick="randInp('input1')">Random</button>
                 </div>
-                <div class="in">
+                <div class="value_inputs">
                     
                     <input class="form-control" type="text" id="input2" />
                     <button onclick="addB()">Add</button>
@@ -65,7 +65,7 @@
                 <button style="width: 70%;" onclick="getValue()">Generate</button>
                 <button style="width: 70%;" onclick="greaterThan()">Greater than</button>
             </div>
-            <DIV id="result">
+            <DIV class= "p-3" id="result">
                 <p>Your result will appear here.</p>
             </DIV>
         </div>
@@ -75,11 +75,13 @@
     <script src="./script.js"></script>
 </body>
 
-<div>
-    <h1>notes</h1>
-    <p>greater if relation</p>
-    <p>squares relation</p>
-    
+<div class="m-4 p-4">
+    <h4>notes</h4>
+    <p>implement further concepts covered in synoptics class</p>
+    <p>prevent from taking an empty item and convert to an int if a number</p>
+    <p>make cartesian product update every time the sets are changed</p>
+</br></br></br>
+    <p>cache data before removing to allow undo</p>
 
 </div>
 </html>
