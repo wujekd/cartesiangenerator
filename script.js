@@ -129,4 +129,13 @@ function greaterThan(){
     result = [];
 
         }
+    
+// function bringDown(){
+//     window.onload = function() {
+//         // Scroll to the bottom of the page
+//         window.scrollTo(1, 670);
+//     };
+// }
+
+// bringDown();
  

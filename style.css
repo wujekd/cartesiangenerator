@@ -55,40 +55,78 @@ button {
 .sets {
     display: flex;
 }
+
+/* flex commands for flex container */
 .notes-cont {
     margin: 3vw;
     padding: 1px;
+    height: 81vh;
+    width: 73vw;
     display: flex;
-    height: 89vh;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: flex-end;
-
+     /* horizontal center */
+    /* align-content: center; */
+    /* flex-wrap: wrap;   */
+    /* overflow: auto; */
+      /* overflow control */
+ 
+    /* align-content: center; */
+     /* vertical center */
 }
  
-
 /* how to apply css to all the children */
+/* flex commands for flex chinldren */
 .notes-cont > * {
     margin: 3px;
     padding: 3px;
-    width: 190px;
-    background-color: #160132d6;
+    width: 80px;
+    height: 80px;
+    background-color: #013e37d6;
+    font-size: 10px;
+    align-self:flex-start;
     
 }
 .fl-it1 {
     height: 160px;
+    align-self: flex-end;
+    /* flex-grow: 0; */
+    flex-shrink: 2;
+}
+.fl-it2{
+    /* flex-grow: 3; */
+    align-self: center;
+    flex-shrink: 2;
+}
+.fl-it6 {
+    /* flex-grow: 7; */
+    flex-shrink: 2;
+}
+.fl-it7 {
+    /* flex-grow: 0; */
+    /* align-self: center; */
+    /* height: 60vh; */
 }
 .notes-section {
     display: flex;
 
 }
-
+.notes-heading {
+    background-color: rgba(250, 235, 215, 0.242);
+}
 
 .test-cont1 {
     background-color: rgb(94, 78, 57);
-    width: 140px;
+    width: 120px;
+
 }
 .test-main {
+    display: flex;
+    font-size: smaller;
+}
+.test-main > * {
+    display: block;
+
+}
+.main-notes {
     display: flex;
 }
