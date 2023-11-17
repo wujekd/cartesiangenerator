@@ -91,11 +91,16 @@ button {
     align-self: flex-end;
     /* flex-grow: 0; */
     flex-shrink: 2;
+    /* flex-order 
+    - order the intems in the containter  */
 }
 .fl-it2{
     /* flex-grow: 3; */
     align-self: center;
     flex-shrink: 2;
+}
+.fl-it3 {
+    flex-basis: 24%;
 }
 .fl-it6 {
     /* flex-grow: 7; */
